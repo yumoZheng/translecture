@@ -1,0 +1,78 @@
+{
+  "ollama": {
+    "base_url": "http://localhost:11434",
+    "api_endpoint": "/api/generate",
+    "current_model": "gemma3:1b"
+  },
+  "whisper": {
+    "current_model": "tiny",
+    "compute_type": "float32"
+  },
+  "available_whisper_models": [
+    {
+      "id": "tiny",
+      "name": "Tiny (~39M)",
+      "ram_requirement": "~1 GB",
+      "recommendation": "极低延迟，适合快速测试，准确率较低"
+    },
+    {
+      "id": "base",
+      "name": "Base (~74M)",
+      "ram_requirement": "~1 GB",
+      "recommendation": "低延迟，适合日常使用，准确率一般"
+    },
+    {
+      "id": "small",
+      "name": "Small (~244M)",
+      "ram_requirement": "~2 GB",
+      "recommendation": "⭐ 推荐默认：延迟与准确率最佳平衡点"
+    },
+    {
+      "id": "medium",
+      "name": "Medium (~769M)",
+      "ram_requirement": "~5 GB",
+      "recommendation": "高准确率，适合高配置机器"
+    },
+    {
+      "id": "large-v3",
+      "name": "Large v3 (~1.5B)",
+      "ram_requirement": "~10 GB",
+      "recommendation": "最高精度，需要大内存，CPU 上延迟较高"
+    }
+  ],
+  "available_llm_models": [
+    {
+      "id": "gemma3:1b",
+      "name": "Gemma 3 1B",
+      "ram_requirement": "~1.5 GB",
+      "recommendation": "⭐ 推荐默认：极速响应，翻译质量良好"
+    },
+    {
+      "id": "gemma3:4b",
+      "name": "Gemma 3 4B",
+      "ram_requirement": "~4 GB",
+      "recommendation": "更强语义理解，适合学术术语较多的场景"
+    },
+    {
+      "id": "qwen2.5:3b",
+      "name": "Qwen 2.5 3B",
+      "ram_requirement": "~3 GB",
+      "recommendation": "中英文双语原生支持，翻译风格更地道"
+    },
+    {
+      "id": "llama3.2:3b",
+      "name": "Llama 3.2 3B",
+      "ram_requirement": "~3 GB",
+      "recommendation": "通用型强，可用于多语言场景"
+    }
+  ],
+  "audio": {
+    "sample_rate": 16000,
+    "language": "auto"
+  },
+  "ui": {
+    "opacity": 0.85,
+    "font_size": 16,
+    "position": "bottom-right"
+  }
+}
